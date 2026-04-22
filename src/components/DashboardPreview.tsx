@@ -104,9 +104,12 @@ export default function DashboardPreview() {
           </div>
 
           <div className="order-1 lg:order-2">
+            <div className="inline-flex items-center px-4 py-2 bg-[#F1F5F9] rounded-full text-[#475569] text-[11px] font-bold uppercase tracking-wider mb-6">
+              Platform Intelligence
+            </div>
             <h2 className="text-4xl font-extrabold text-[#0F172A] mb-8 leading-tight tracking-tight">
-              Data-Driven <br />
-              <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">Decision Intelligence.</span>
+              AI-Powered <br />
+              <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">Health Insights.</span>
             </h2>
             <p className="text-lg text-[#64748B] mb-10 leading-[1.6]">
               Ditch the noise. CuraStream synthesizes complex biometric data into actionable clinical insights. We prioritize the patients who need your attention most.
@@ -114,8 +117,10 @@ export default function DashboardPreview() {
 
             <div className="space-y-6">
               {[
-                { label: "Predictive Analytics", desc: "Identify deterioration up to 72 hours early." },
-                { label: "Automated Documentation", desc: "Sync vitals directly to your existing EMR/EHR." },
+                { label: "Risk scoring engine", desc: "Dynamic stratification based on continuous vitals." },
+                { label: "Predictive alerts", desc: "Identify deterioration before an acute event occurs." },
+                { label: "Population health dashboards", desc: "Monitor your entire cohort from a single pane." },
+                { label: "Real-time intervention triggers", desc: "Automatically notify the right clinician at the right time." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <div className="w-6 h-6 rounded-full bg-[#F1F5F9] flex items-center justify-center flex-shrink-0 mt-1">

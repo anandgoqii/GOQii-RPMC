@@ -1,26 +1,26 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
-import { Hospital, Building2, Briefcase, HeartHandshake } from 'lucide-react';
+import { Hospital, ShieldCheck, Briefcase, FlaskConical } from 'lucide-react';
 
 const audiences = [
   {
     id: 'hospitals',
-    label: 'Hospitals',
+    label: 'Hospitals & Providers',
     icon: Hospital,
     content: {
-      headline: "Scalable Post-Acute Care Management.",
-      text: "Extend your clinical reach into patients' homes without increasing overhead. Reduce bed blocking and ensure continuous compliance monitoring.",
-      features: ["Readmission prevention", "Bed turnover optimization", "Seamless EMR integration"]
+      headline: "Extend care beyond discharge.",
+      text: "Maintain a clinical connection with patients after they leave the hospital to monitor recovery and intervene before readmission is necessary.",
+      features: ["Readmission prevention", "Continuous vitals monitoring", "Seamless EMR integration"]
     }
   },
   {
-    id: 'clinics',
-    label: 'Clinics',
-    icon: Building2,
+    id: 'insurance',
+    label: 'Insurance & Payers',
+    icon: ShieldCheck,
     content: {
-      headline: "Unlock New Recurring Revenue Streams.",
-      text: "Automated billing support for CPT codes 99453, 99454, 99457, and 99458. Turn remote care into a profitable center for your practice.",
-      features: ["Automated billing exports", "Practice growth insights", "Simplified clinician workflows"]
+      headline: "Reduce claims and improve outcomes.",
+      text: "Utilize real-time population data to identify high-risk members and proactively manage their condition before costly emergency encounters occur.",
+      features: ["Actuarial data depth", "High-risk member identification", "Cost-saving metrics"]
     }
   },
   {
@@ -28,19 +28,19 @@ const audiences = [
     label: 'Employers',
     icon: Briefcase,
     content: {
-      headline: "Healthier Workforce, Lower Premiums.",
-      text: "Proactively manage chronic diseases within your employee population to reduce absenteeism and long-term healthcare spend.",
+      headline: "Drive workforce health & productivity.",
+      text: "Keep your employees healthy by proactively managing chronic diseases and preventing acute events that lead to absenteeism.",
       features: ["Employee health analytics", "Engagement optimization", "Chronic disease management"]
     }
   },
   {
-    id: 'insurance',
-    label: 'Insurers',
-    icon: HeartHandshake,
+    id: 'pharma',
+    label: 'Pharma & Clinical Research',
+    icon: FlaskConical,
     content: {
-      headline: "Risk Stratification at Scale.",
-      text: "Utilize real-time population data to identify high-risk members and intervene before costly emergency encounters occur.",
-      features: ["Actuarial data depth", "Intervention efficiency", "Cost-saving metrics"]
+      headline: "Improve adherence & real-world data tracking.",
+      text: "Capture continuous, real-world baseline data from patients for clinical trials and ensure strict adherence to trial protocols.",
+      features: ["Real-world evidence", "Protocol adherence tracking", "Decentralized trial support"]
     }
   }
 ];
@@ -101,7 +101,13 @@ export default function Audience() {
                 </div>
                 <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#F8FAFC] border border-[#E2E8F0]">
                   <img 
-                    src={`https://images.unsplash.com/photo-${tab.id === 'hospitals' ? '1586773860418-d3b97978c650' : '1582213726892-25b82855b819'}?auto=format&fit=crop&q=80&w=800`}
+                    src={
+                      tab.id === 'employers' ? 'https://appcdn.goqii.com/storeimg/89672_1732853903.png' : 
+                      tab.id === 'hospitals' ? 'https://appcdn.goqii.com/storeimg/61951_1733724534.png' : 
+                      tab.id === 'pharma' ? 'https://storage.googleapis.com/ksabupatest/2026/04/03/4ay4z/8swa84b8y1.webp' : 
+                      tab.id === 'insurance' ? 'https://appcdn.goqii.com/storeimg/48429_1733724619.jpg' :
+                      'https://images.unsplash.com/photo-1582213726892-25b82855b819?auto=format&fit=crop&q=80&w=800'
+                    }
                     className="w-full h-full object-cover"
                     alt={tab.label}
                   />

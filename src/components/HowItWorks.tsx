@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Smartphone, Radar, BrainCircuit, HeartPulse } from 'lucide-react';
+import { Smartphone, Radar, BrainCircuit, HeartPulse, UserCheck } from 'lucide-react';
 
 const steps = [
   {
@@ -25,6 +25,12 @@ const steps = [
     title: "Clinical Action",
     desc: "Care teams intervene proactively based on prioritized risk alerts.",
     color: "bg-rose-50 text-rose-600"
+  },
+  {
+    icon: UserCheck,
+    title: "Continuous Engagement",
+    desc: "Ongoing behavioral nudges and coaching support driving long-term adherence.",
+    color: "bg-amber-50 text-amber-600"
   }
 ];
 
@@ -39,7 +45,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 relative">
+        <div className="grid md:grid-cols-5 gap-6 relative">
           {/* Connecting Line */}
           <div className="hidden md:block absolute top-[60px] left-0 w-full h-[2px] bg-[#E2E8F0] -z-0" />
           
@@ -57,8 +63,8 @@ export default function HowItWorks() {
               </div>
               <div className="text-center">
                 <span className="inline-block px-3 py-1 bg-[#F1F5F9] rounded-full text-[10px] font-bold text-[#94A3B8] uppercase mb-4">Step {idx + 1}</span>
-                <h3 className="text-xl font-bold text-[#0F172A] mb-3 tracking-tight">{step.title}</h3>
-                <p className="text-[#64748B] text-sm leading-[1.6] px-4">{step.desc}</p>
+                <h3 className="text-lg font-bold text-[#0F172A] mb-3 tracking-tight">{step.title}</h3>
+                <p className="text-[#64748B] text-sm leading-[1.6] px-2">{step.desc}</p>
               </div>
             </motion.div>
           ))}

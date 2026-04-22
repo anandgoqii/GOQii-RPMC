@@ -19,24 +19,28 @@ export default function Hero() {
           <h1 className="text-[56px] leading-[1.1] font-extrabold text-[#0F172A] tracking-[-1.5px] mb-6">
             Continuous Care. <br />
             <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">
-              Beyond the Clinic.
+              Beyond Monitoring.
             </span>
           </h1>
           
-          <p className="text-lg text-[#64748B] leading-[1.6] max-w-[440px] mb-8">
-            Our remote patient monitoring platform detects risks 72 hours earlier, preventing hospitalization through intelligent AI-driven alerts.
+          <p className="text-lg text-[#64748B] leading-[1.6] max-w-[480px] mb-8">
+            Remote Patient Monitoring powered by AI, behavioral science, and real-time clinical intelligence—designed to prevent risk, not just track it.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
             <motion.button 
+              onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-[#0F172A] text-white px-7 py-3.5 rounded-full font-semibold text-sm transition-all"
             >
               Start Monitoring
             </motion.button>
-            <button className="bg-white text-[#0F172A] border border-[#E2E8F0] px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-slate-50 transition-all">
-              Watch Demo
+            <button 
+              onClick={() => document.getElementById('platform')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white text-[#0F172A] border border-[#E2E8F0] px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-slate-50 transition-all"
+            >
+              See Platform
             </button>
           </div>
 

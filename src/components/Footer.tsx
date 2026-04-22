@@ -5,10 +5,14 @@ export default function Footer() {
     <footer className="py-20 bg-white border-t border-[#F1F5F9]">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
         <div className="col-span-1">
-           <div className="flex items-center gap-2 mb-6">
-            <div className="w-6 h-6 bg-gradient-to-br from-[#0D9488] to-[#2563EB] rounded" />
+           <div className="flex items-center gap-3 mb-6">
+            <img 
+              src="https://demorpmcv.goqii.com/assets/goqii-footer-logo-BoIhmnw2.png" 
+              alt="GOQii Logo" 
+              className="h-8 object-contain opacity-80"
+            />
             <span className="text-xl font-extrabold tracking-tight text-[#0F172A]">
-              CuraStream
+              RPM
             </span>
           </div>
           <p className="text-[#64748B] text-sm leading-[1.6] mb-8">
@@ -17,27 +21,27 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Product</h4>
+          <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Compliance</h4>
           <ul className="space-y-4">
-            {['RPM Essentials', 'CCM Integration', 'AI Risk Detection', 'Device Catalog'].map(i => (
+            {['HIPAA Adherence', 'GDPR Privacy', 'PDPL Framework', 'ISO 27001'].map(i => (
               <li key={i}><a href="#" className="text-[#64748B] text-sm hover:text-[#0F172A]">{i}</a></li>
             ))}
           </ul>
         </div>
 
         <div>
-           <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Resources</h4>
+           <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Security</h4>
            <ul className="space-y-4">
-            {['Case Studies', 'Clinical Evidence', 'CPT Code Guide', 'Safety Standards'].map(i => (
+            {['Security Overview', 'Data Governance', 'Audit Logs', 'Encryption Standard'].map(i => (
               <li key={i}><a href="#" className="text-[#64748B] text-sm hover:text-[#0F172A]">{i}</a></li>
             ))}
           </ul>
         </div>
 
         <div>
-           <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Compliance</h4>
+           <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Partnerships & Contact</h4>
            <ul className="space-y-4">
-            {['HIPAA Privacy', 'Terms of Service', 'Security Overview', 'Cookie Policy'].map(i => (
+            {['API Integration', 'Implementation Partners', 'Contact Sales', 'Support Portal'].map(i => (
               <li key={i}><a href="#" className="text-[#64748B] text-sm hover:text-[#0F172A]">{i}</a></li>
             ))}
           </ul>
