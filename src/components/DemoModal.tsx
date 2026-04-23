@@ -97,8 +97,11 @@ export default function DemoModal() {
                   Integration Priority
                 </label>
                 <div className="relative">
-                  <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm appearance-none bg-transparent">
-                    <option value="" disabled selected>Select priority</option>
+                  <select 
+                    defaultValue=""
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm appearance-none bg-transparent"
+                  >
+                    <option value="" disabled>Select priority</option>
                     <option value="high">High - Immediate</option>
                     <option value="medium">Medium - Next 3 months</option>
                     <option value="low">Low - Exploring options</option>

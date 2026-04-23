@@ -1,32 +1,41 @@
 import { motion } from 'motion/react';
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function CTASection() {
   return (
-    <section className="relative w-full h-screen min-h-[500px] bg-[#f7f9fc]">
-      {/* 
-        Using absolute positioning at 50% as requested, combined 
-        with transform translate to perfectly center it horizontally and vertically 
-      */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-4 text-center">
+    <section className="py-32 bg-[#F8FAFC]">
+      <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
-           className="max-w-2xl mx-auto"
+           className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] rounded-[48px] p-12 md:p-20 text-white relative overflow-hidden shadow-2xl"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4">
-            Start delivering proactive care today
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/20 blur-[80px] rounded-full" />
+          
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight leading-tight relative z-10">
+            Start delivering proactive, <br className="hidden sm:block" />
+            continuous care.
           </h2>
-          <p className="text-gray-600 mb-6 text-lg">
-            Book a demo to see how RPMC works in real-world scenarios.
-          </p>
-
-          <button 
-            onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}
-            className="bg-[#0b1c39] text-white px-8 py-3.5 rounded-full font-medium hover:bg-slate-800 transition-colors shadow-sm"
-          >
-            Book Demo
-          </button>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
+            <motion.button 
+              onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white text-[#2563EB] px-10 py-4 rounded-full font-bold shadow-xl flex items-center gap-2 group transition-all"
+            >
+              Book Demo
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </motion.button>
+            <Link 
+              to="/contact-sales"
+              className="flex items-center gap-2 px-10 py-4 rounded-full font-bold text-white hover:bg-white/10 border border-white/20 transition-all text-center justify-center"
+            >
+              Talk to Expert
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

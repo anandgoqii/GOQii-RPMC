@@ -23,8 +23,9 @@ export default function Footer() {
           <h4 className="font-bold text-[#0F172A] mb-6 uppercase tracking-[1px] text-[11px]">Product</h4>
           <ul className="space-y-4">
             <li><Link to="/#platform" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Platform</Link></li>
-            <li><Link to="/#kit" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPM Kit</Link></li>
-            <li><Link to="/#compliance" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Integrations</Link></li>
+            <li><Link to="/#kit" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPMC Kit</Link></li>
+            <li><Link to="/#saudi-infrastructure" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Infrastructure</Link></li>
+            <li><Link to="/#certifications" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Compliance</Link></li>
           </ul>
         </div>
 

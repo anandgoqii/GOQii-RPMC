@@ -18,8 +18,8 @@ export default function TrustScale() {
             className="p-6 rounded-[24px] bg-[#F8FAFC] border border-[#E2E8F0]"
           >
             <Globe2 className="w-8 h-8 mx-auto text-[#2563EB] mb-4" />
-            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">5M+</div>
-            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Users Engaged Globally</div>
+            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">Global</div>
+            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Global Deployments</div>
           </motion.div>
 
           <motion.div
@@ -30,8 +30,8 @@ export default function TrustScale() {
             className="p-6 rounded-[24px] bg-[#F8FAFC] border border-[#E2E8F0]"
           >
             <Building2 className="w-8 h-8 mx-auto text-[#0D9488] mb-4" />
-            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">300+</div>
-            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Enterprise Partners</div>
+            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">Enterprise</div>
+            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Enterprise-Ready Infrastructure</div>
           </motion.div>
 
           <motion.div
@@ -42,8 +42,8 @@ export default function TrustScale() {
             className="p-6 rounded-[24px] bg-[#F8FAFC] border border-[#E2E8F0]"
           >
             <ShieldCheck className="w-8 h-8 mx-auto text-[#8B5CF6] mb-4" />
-            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">100%</div>
-            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Compliance Record</div>
+            <div className="text-4xl font-extrabold text-[#0F172A] mb-2">Proven</div>
+            <div className="text-sm font-bold text-[#64748B] uppercase tracking-wide">Healthcare Integrations</div>
           </motion.div>
         </div>
       </div>

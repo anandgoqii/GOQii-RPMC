@@ -1,9 +1,23 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Play, CheckCircle2 } from 'lucide-react';
+import { useLayoutEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Hero() {
+  const { hash } = useLocation();
+
+  useLayoutEffect(() => {
+    // If we land on the home page without a specific hash, force the scroll to the top
+    // to fight any browser scroll restoration or layout shifting.
+    if (!hash) {
+      window.scrollTo(0, 0);
+      const t = setTimeout(() => window.scrollTo(0, 0), 100);
+      return () => clearTimeout(t);
+    }
+  }, [hash]);
+
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-[#F8FAFC]">
+    <section className="relative pt-32 pb-20 overflow-hidden bg-[#F8FAFC]" id="hero">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -17,42 +31,34 @@ export default function Hero() {
           </div>
           
           <h1 className="text-[56px] leading-[1.1] font-extrabold text-[#0F172A] tracking-[-1.5px] mb-6">
-            Continuous Care. <br />
+            Beyond Monitoring. <br />
             <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">
-              Beyond Monitoring.
+              Into Continuous Care.
             </span>
           </h1>
           
           <p className="text-lg text-[#64748B] leading-[1.6] max-w-[480px] mb-8">
-            Remote Patient Monitoring powered by AI, behavioral science, and real-time clinical intelligence—designed to prevent risk, not just track it.
+            An AI-powered remote patient monitoring ecosystem that connects devices, data, and care teams to deliver real-time intervention and better outcomes.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
             <motion.button 
-              onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}
+              onClick={() => document.getElementById('platform')?.scrollIntoView({ behavior: 'smooth' })}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-[#0F172A] text-white px-7 py-3.5 rounded-full font-semibold text-sm transition-all"
             >
-              Start Monitoring
+              See How It Works
             </motion.button>
             <button 
-              onClick={() => window.dispatchEvent(new CustomEvent('open-video-modal'))}
+              onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}
               className="bg-white text-[#0F172A] border border-[#E2E8F0] px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
             >
-              <Play className="w-4 h-4" />
-              Watch Demo
+              Book Demo
             </button>
           </div>
 
-          <div className="mt-12 flex items-center gap-6">
-            <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden ring-4 ring-slate-50">
-                  <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 123}`} alt="User" />
-                </div>
-              ))}
-            </div>
+          <div className="mt-12">
             <div className="text-sm">
               <p className="font-bold text-slate-900 tracking-tight">Trusted by 500+ Clinics</p>
               <div className="flex items-center gap-1">

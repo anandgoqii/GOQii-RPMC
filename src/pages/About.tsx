@@ -20,7 +20,7 @@ export default function About() {
             className="text-center max-w-4xl mx-auto"
           >
             <span className="inline-block px-4 py-1.5 bg-[#F1F5F9] border border-[#E2E8F0] rounded-full text-[#64748B] text-[11px] font-bold uppercase tracking-wider mb-6">
-              About GOQii HE RPMC
+              About GOQii HEALTHENGAGE RPMC
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold text-[#0F172A] mb-8 leading-[1.1] tracking-tight">
               Reimagining Healthcare <br />

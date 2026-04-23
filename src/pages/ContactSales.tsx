@@ -162,8 +162,11 @@ export default function ContactSales() {
 
                 <div>
                   <label className="block text-sm font-semibold text-[#0F172A] mb-2">Department</label>
-                  <select className="w-full px-4 py-3.5 rounded-xl border border-[#E2E8F0] focus:ring-2 focus:ring-[#2563EB]/10 focus:border-[#2563EB] outline-none transition-all text-sm appearance-none bg-white">
-                    <option value="">Select department</option>
+                  <select 
+                    defaultValue=""
+                    className="w-full px-4 py-3.5 rounded-xl border border-[#E2E8F0] focus:ring-2 focus:ring-[#2563EB]/10 focus:border-[#2563EB] outline-none transition-all text-sm appearance-none bg-white"
+                  >
+                    <option value="" disabled>Select department</option>
                     <option value="cardiology">Cardiology</option>
                     <option value="endocrinology">Endocrinology</option>
                     <option value="post-op">Post-Op Recovery</option>

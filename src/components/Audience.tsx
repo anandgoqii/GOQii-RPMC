@@ -52,8 +52,8 @@ export default function Audience() {
     <section className="py-24 bg-[#F8FAFC]" id="solutions">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Scalable Solutions for All.</h2>
-          <p className="text-[#64748B]">Tailored monitoring ecosystem for every healthcare stakeholder.</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Tailored Solutions for Every Segment.</h2>
+          <p className="text-[#64748B]">Hospitals, Insurance, Employers, and Governments get tailored benefits.</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">

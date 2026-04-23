@@ -3,7 +3,7 @@ import { Database, ShieldCheck, FileCheck, Landmark, Network } from 'lucide-reac
 
 export default function SaudiIntegration() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#0A1128]" id="compliance">
+    <section className="py-24 relative overflow-hidden bg-[#0A1128]" id="saudi-infrastructure">
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#2563EB]/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#0D9488]/10 rounded-full blur-[100px] pointer-events-none" />

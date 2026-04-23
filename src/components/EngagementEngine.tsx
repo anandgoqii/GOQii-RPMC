@@ -4,23 +4,23 @@ import { Target, MessageCircle, Trophy, Activity, ArrowRight } from 'lucide-reac
 const features = [
   {
     icon: MessageCircle,
-    title: "Real-time nudges & alerts",
-    desc: "Automated SMS and in-app prompts guide patients to take readings on time."
+    title: "Smart nudges",
+    desc: "AI-driven prompts that guide patients to take readings and stay synchronized."
   },
   {
     icon: Target,
-    title: "Personalized coaching",
-    desc: "Human-in-the-loop care teams ready to assist and educate based on data trends."
+    title: "Goal tracking",
+    desc: "Monitor longitudinal metrics and clinical goals in real-time."
   },
   {
     icon: Trophy,
-    title: "Gamified adherence tracking",
-    desc: "Rewards and milestones keep patients motivated throughout their care journey."
+    title: "Habit reinforcement",
+    desc: "Building long-term health habits through psychology-backed behavioral design."
   },
   {
     icon: Activity,
-    title: "Habit reinforcement system",
-    desc: "Building long-term health habits through psychology-backed behavioral design."
+    title: "Continuous motivation",
+    desc: "Keeping patients inspired and active throughout their care journey."
   }
 ];
 
@@ -40,10 +40,10 @@ export default function EngagementEngine() {
               Engagement Engine
             </div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6 tracking-tight leading-tight">
-              Driving Behavior Change <span className="text-[#2563EB]">at Scale</span>
+              Driving <span className="text-[#2563EB]">Behavior Change</span>
             </h2>
             <p className="text-lg text-[#64748B] mb-10 leading-[1.6]">
-              Because monitoring without engagement doesn’t work. Our proprietary behavioral engine ensures patients stay active and adherent to their care plans.
+              This is GOQii’s real strength. Monitoring without engagement doesn’t work. Our proprietary behavioral engine ensures patients stay active and adherent to their care plans.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mb-10">
