@@ -49,7 +49,7 @@ export default function Audience() {
   const [activeTab, setActiveTab] = useState(audiences[0].id);
 
   return (
-    <section className="py-24 bg-[#F8FAFC]">
+    <section className="py-24 bg-[#F8FAFC]" id="solutions">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Scalable Solutions for All.</h2>

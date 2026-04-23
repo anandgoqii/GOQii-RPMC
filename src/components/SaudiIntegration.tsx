@@ -18,78 +18,16 @@ export default function SaudiIntegration() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-white text-[12px] font-bold tracking-wider mb-6 backdrop-blur-sm shadow-sm transition-all hover:bg-white/10">
-              <span className="text-base leading-none">🇸🇦</span> Built for Saudi Arabia
+            <div className="flex flex-wrap gap-4 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2563EB]/20 border border-[#2563EB]/30 rounded-full text-[#60A5FA] text-[11px] font-bold uppercase tracking-widest backdrop-blur-sm shadow-sm animate-pulse">
+                Coming Soon
+              </div>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
-              National Systems <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D9488] to-[#2563EB]">Integration</span>
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight leading-[1.1]">
+              National Systems <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D9488] to-[#2563EB]">Integration</span>
             </h2>
-            
-            <p className="text-lg text-slate-300 mb-12 leading-[1.6]">
-              100% compliant with Saudi national standards. Designed to integrate seamlessly with your existing healthcare ecosystem — not replace it.
-            </p>
-
-            <div className="space-y-4 mb-12">
-              {/* Feature 1 */}
-              <div className="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-white/20 transition-all cursor-pointer">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0D9488]/20 to-[#2563EB]/20 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                    <Network className="w-6 h-6 text-[#0D9488]" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-3">NPHIES Integration</h3>
-                    <ul className="space-y-2 text-sm text-slate-400">
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#0D9488] shrink-0" /> Native clinical data exchange with Saudi insurers</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#0D9488] shrink-0" /> Auto-maps device data to ICD-10-AM & SBS/ACHI codes</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#0D9488] shrink-0" /> HL7 FHIR compliant</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Feature 2 */}
-              <div className="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-white/20 transition-all cursor-pointer">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#2563EB]/20 to-purple-500/20 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                    <Landmark className="w-6 h-6 text-[#2563EB]" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-3">ZATCA (Fatoora) Ready</h3>
-                    <ul className="space-y-2 text-sm text-slate-400">
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#2563EB] shrink-0" /> VAT-compliant (15%) billing workflows</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#2563EB] shrink-0" /> E-invoicing & Zakat compliance built-in</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-[#2563EB] shrink-0" /> Seamless integration with finance systems</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Feature 3 */}
-              <div className="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-white/20 transition-all cursor-pointer">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/20 to-[#0D9488]/20 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                    <ShieldCheck className="w-6 h-6 text-emerald-400" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-3">KSA Data Governance</h3>
-                    <ul className="space-y-2 text-sm text-slate-400">
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" /> PDPL compliance</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" /> Local data residency</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" /> Role-based access control & audit logs</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              {['HL7 FHIR', 'API-First', 'HIS/EHR Ready', 'White-Label'].map(tag => (
-                <span key={tag} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold backdrop-blur-sm">
-                  {tag}
-                </span>
-              ))}
-            </div>
           </motion.div>
 
           {/* Right: Visual */}
@@ -103,7 +41,7 @@ export default function SaudiIntegration() {
             {/* Base "Data Center" layers */}
             <div className="absolute inset-0 bg-[#0F172A] rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
                <img 
-                 src="https://demorpmcv.goqii.com/assets/rpmc-ksa-compliance-CsHwzQKt.jpg" 
+                 src="https://appcdn.goqii.com/storeimg/60224_1776937117.png" 
                  alt="Saudi Healthcare Data Center" 
                  className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-[2s]"
                />
@@ -115,28 +53,20 @@ export default function SaudiIntegration() {
             <motion.div 
                animate={{ y: [-8, 8, -8] }}
                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute top-12 -left-6 lg:-left-12 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.2)] flex items-center gap-4 z-20"
+               className="absolute top-12 -left-6 lg:-left-12 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.2)] flex items-center justify-center z-20"
             >
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                 <Database className="text-[#0D9488] w-5 h-5" />
-              </div>
-              <div>
-                <div className="text-xs text-slate-400 font-semibold mb-0.5">Local Hosting</div>
-                <div className="text-sm text-white font-bold tracking-wide">Riyadh Data Center</div>
               </div>
             </motion.div>
 
             <motion.div 
                animate={{ y: [8, -8, 8] }}
                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute bottom-24 -right-6 lg:-right-4 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.2)] flex items-center gap-4 z-20"
+               className="absolute bottom-24 -right-6 lg:-right-4 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.2)] flex items-center justify-center z-20"
             >
                <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center">
                 <FileCheck className="text-emerald-400 w-5 h-5" />
-              </div>
-               <div>
-                <div className="text-xs text-emerald-400/80 font-semibold mb-0.5">Verified</div>
-                <div className="text-sm text-white font-bold tracking-wide">PDPL Protocol Active</div>
               </div>
             </motion.div>
 

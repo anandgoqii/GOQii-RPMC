@@ -3,6 +3,8 @@ import { Activity, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
 
+import { Link } from 'react-router-dom';
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,26 +22,23 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img 
-            src="https://demorpmcv.goqii.com/assets/goqii-footer-logo-BoIhmnw2.png" 
+            src="https://appcdn.goqii.com/storeimg/82417_1776936691.png" 
             alt="GOQii Logo" 
             className="h-8 object-contain"
           />
-          <span className="text-xl font-extrabold tracking-tight text-[#0F172A]">
-            RPM
-          </span>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          {['Platform', 'Solutions', 'Data', 'Outcomes', 'Compliance'].map((item) => (
-            <a
+          {['Platform', 'Kit', 'Data', 'Solutions', 'Outcomes', 'About', 'Compliance'].map((item) => (
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              to={item === 'About' ? '/about' : `/#${item.toLowerCase().replace(/\s+/g, '-')}`}
               className="text-sm font-semibold text-[#64748B] hover:text-[#0F172A] transition-colors"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -67,15 +66,15 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-20 left-6 right-6 bg-white rounded-3xl p-8 shadow-2xl border border-slate-100 flex flex-col gap-6 md:hidden"
         >
-          {['Platform', 'Solutions', 'Data', 'Outcomes', 'Compliance'].map((item) => (
-            <a 
+          {['Platform', 'Kit', 'Data', 'Solutions', 'Outcomes', 'About', 'Compliance'].map((item) => (
+            <Link 
               key={item} 
-              href={`#${item.toLowerCase()}`}
+              to={item === 'About' ? '/about' : `/#${item.toLowerCase().replace(/\s+/g, '-')}`}
               onClick={() => setMobileMenuOpen(false)}
               className="text-lg font-medium text-slate-900"
             >
               {item}
-            </a>
+            </Link>
           ))}
           <hr className="border-slate-100" />
           <button 

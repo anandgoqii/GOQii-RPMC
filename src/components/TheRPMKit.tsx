@@ -34,7 +34,7 @@ export default function TheRPMKit() {
   const [activeDevice, setActiveDevice] = useState(devices[0]);
 
   return (
-    <section className="py-24 bg-white border-y border-[#F1F5F9]">
+    <section className="py-24 bg-white border-y border-[#F1F5F9]" id="kit">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}

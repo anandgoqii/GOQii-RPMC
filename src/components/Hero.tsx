@@ -37,10 +37,11 @@ export default function Hero() {
               Start Monitoring
             </motion.button>
             <button 
-              onClick={() => document.getElementById('platform')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-white text-[#0F172A] border border-[#E2E8F0] px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-slate-50 transition-all"
+              onClick={() => window.dispatchEvent(new CustomEvent('open-video-modal'))}
+              className="bg-white text-[#0F172A] border border-[#E2E8F0] px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
             >
-              See Platform
+              <Play className="w-4 h-4" />
+              Watch Demo
             </button>
           </div>
 

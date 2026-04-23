@@ -36,7 +36,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 bg-[#F8FAFC]" id="platform">
+    <section className="py-24 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h2 className="text-4xl font-extrabold text-[#0F172A] mb-5 tracking-tight">Proactive Care Loop</h2>

@@ -10,7 +10,7 @@ const pillars = [
 
 export default function SolutionEcosystem() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="platform">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6 tracking-tight">
