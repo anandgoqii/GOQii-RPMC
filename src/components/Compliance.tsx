@@ -76,12 +76,18 @@ export default function Compliance() {
           ))}
         </div>
 
-        <div className="flex justify-center">
-          <div className="flex items-center gap-3 px-6 py-4 bg-white border border-[#E2E8F0] rounded-2xl shadow-sm">
-            <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-            <span className="text-sm font-bold text-[#0F172A]">
-              Deployed in compliance with national healthcare frameworks across regions
-            </span>
+        <div className="mt-16 pt-16 border-t border-[#E2E8F0] grid md:grid-cols-3 gap-8 text-center text-[#64748B]">
+          <div className="flex flex-col items-center gap-4">
+            <h4 className="text-[#0F172A] font-bold tracking-tight">Enterprise Infrastructure</h4>
+            <p className="text-sm">Built for high availability and low-latency healthcare operations.</p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h4 className="text-[#0F172A] font-bold tracking-tight">Global Capability</h4>
+            <p className="text-sm">Multi-region deployment ready with localized data sovereignty.</p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h4 className="text-[#0F172A] font-bold tracking-tight">Secure & Compliant</h4>
+            <p className="text-sm">Rigorous security audits and end-to-end clinical data encryption.</p>
           </div>
         </div>
       </div>

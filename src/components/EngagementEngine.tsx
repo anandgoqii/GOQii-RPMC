@@ -9,18 +9,18 @@ const features = [
   },
   {
     icon: Target,
-    title: "Goal tracking",
-    desc: "Monitor longitudinal metrics and clinical goals in real-time."
+    title: "Reminders",
+    desc: "Personalized alerts for medication, measurements, and clinical tasks."
   },
   {
     icon: Trophy,
-    title: "Habit reinforcement",
+    title: "Habit tracking",
     desc: "Building long-term health habits through psychology-backed behavioral design."
   },
   {
     icon: Activity,
-    title: "Continuous motivation",
-    desc: "Keeping patients inspired and active throughout their care journey."
+    title: "Continuous guidance",
+    desc: "Keeping patients inspired and active with experts always within reach."
   }
 ];
 

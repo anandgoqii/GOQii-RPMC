@@ -34,7 +34,7 @@ export default function Outcomes() {
             "Reduced hospital readmissions",
             "Improved adherence",
             "Early risk detection",
-            "Better long-term health outcomes"
+            "Better long-term outcomes"
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-3">
               <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">

@@ -15,32 +15,33 @@ export default function HumanAI() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1.5 bg-white border border-[#E2E8F0] rounded-full text-[#64748B] text-[11px] font-bold uppercase tracking-wider mb-6">
-              Human + AI
+              Human + AI Care
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-              Where Technology <br />
-              <span className="text-[#2563EB]">Meets Care</span>
+              Human + <br />
+              <span className="text-[#2563EB]">AI Care</span>
             </h2>
             <p className="text-xl text-[#0F172A] font-medium mb-12 leading-relaxed">
-              Data alone doesn’t change outcomes — <span className="underline decoration-[#0D9488] decoration-4 underline-offset-4">action does.</span>
+              AI identifies risks. <br />
+              <span className="underline decoration-[#0D9488] decoration-4 underline-offset-4">Care teams take action.</span>
             </p>
 
             <div className="space-y-6">
               {[
                 { 
-                  icon: BrainCircuit, 
-                  title: 'AI detects early risk signals', 
-                  desc: 'Our predictive models scan stream of data to catch deterioration markers before they become acute events.' 
+                  icon: CheckCircle2, 
+                  title: 'Doctors', 
+                  desc: 'Medical professionals providing clinical oversight and intervention.' 
                 },
                 { 
-                  icon: Users, 
-                  title: 'Care teams intervene proactively', 
-                  desc: 'Clinicians and coaches get real-time alerts allowing them to reach out and adjust protocols immediately.' 
+                  icon: CheckCircle2, 
+                  title: 'Health coaches', 
+                  desc: 'Specialists driving daily behavioral changes and lifestyle optimization.' 
                 },
                 { 
-                  icon: HeartPulse, 
-                  title: 'Patients stay engaged', 
-                  desc: 'Behavioral science keeps patients synchronized with their treatment plan through continuous support.' 
+                  icon: CheckCircle2, 
+                  title: 'Care coordinators', 
+                  desc: 'Dedicated staff ensuring seamless patient navigation and support.' 
                 }
               ].map((item, i) => (
                 <div key={i} className="flex gap-5 group">

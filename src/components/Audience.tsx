@@ -5,7 +5,7 @@ import { Hospital, ShieldCheck, Briefcase, FlaskConical } from 'lucide-react';
 const audiences = [
   {
     id: 'hospitals',
-    label: 'Hospitals & Providers',
+    label: 'Hospitals',
     icon: Hospital,
     content: {
       headline: "Extend care beyond discharge.",
@@ -15,7 +15,7 @@ const audiences = [
   },
   {
     id: 'insurance',
-    label: 'Insurance & Payers',
+    label: 'Insurance',
     icon: ShieldCheck,
     content: {
       headline: "Reduce claims and improve outcomes.",
@@ -34,13 +34,13 @@ const audiences = [
     }
   },
   {
-    id: 'pharma',
-    label: 'Pharma & Clinical Research',
+    id: 'governments',
+    label: 'Governments',
     icon: FlaskConical,
     content: {
-      headline: "Improve adherence & real-world data tracking.",
-      text: "Capture continuous, real-world baseline data from patients for clinical trials and ensure strict adherence to trial protocols.",
-      features: ["Real-world evidence", "Protocol adherence tracking", "Decentralized trial support"]
+      headline: "Population health at national scale.",
+      text: "Deploy large-scale health initiatives that reduce the national burden of chronic disease through standardized, technology-enabled care loops.",
+      features: ["National health infrastructure", "Scalable data architecture", "Standardized clinical pathways"]
     }
   }
 ];
@@ -52,8 +52,8 @@ export default function Audience() {
     <section className="py-24 bg-[#F8FAFC]" id="solutions">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4 tracking-tight">Tailored Solutions for Every Segment.</h2>
-          <p className="text-[#64748B]">Hospitals, Insurance, Employers, and Governments get tailored benefits.</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4 tracking-tight">WHO IT'S FOR</h2>
+          <p className="text-[#64748B]">Hospitals | Insurance | Employers | Governments</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">
@@ -104,7 +104,7 @@ export default function Audience() {
                     src={
                       tab.id === 'employers' ? 'https://appcdn.goqii.com/storeimg/89672_1732853903.png' : 
                       tab.id === 'hospitals' ? 'https://appcdn.goqii.com/storeimg/61951_1733724534.png' : 
-                      tab.id === 'pharma' ? 'https://storage.googleapis.com/ksabupatest/2026/04/03/4ay4z/8swa84b8y1.webp' : 
+                      tab.id === 'governments' ? 'https://storage.googleapis.com/ksabupatest/2026/04/03/4ay4z/8swa84b8y1.webp' : 
                       tab.id === 'insurance' ? 'https://appcdn.goqii.com/storeimg/48429_1733724619.jpg' :
                       'https://images.unsplash.com/photo-1582213726892-25b82855b819?auto=format&fit=crop&q=80&w=800'
                     }

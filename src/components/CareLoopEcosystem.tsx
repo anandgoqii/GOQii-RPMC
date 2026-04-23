@@ -52,7 +52,7 @@ export default function CareLoopEcosystem() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-            A Complete Care Loop
+            THE PLATFORM
           </h2>
           <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap text-xs md:text-sm font-bold text-[#64748B] uppercase tracking-wider">
             <span>Devices</span>
@@ -70,8 +70,8 @@ export default function CareLoopEcosystem() {
             <span className="text-[#2563EB]">Outcomes</span>
           </div>
           <p className="mt-8 text-xl text-[#0F172A] font-medium leading-relaxed">
-            We don’t just collect health data. <br className="hidden sm:block" />
-            We turn it into <span className="text-[#2563EB]">continuous care</span>.
+            Intelligent Care, Delivered Continuously <br className="hidden sm:block" />
+            Our platform connects devices, data, AI, and care teams to enable <span className="text-[#2563EB]">real-time monitoring</span> and proactive intervention.
           </p>
         </div>
 
