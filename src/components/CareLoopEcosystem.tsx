@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Smartphone, Database, BrainCircuit, Activity, Users, Send, ArrowRight, Bell, Video } from 'lucide-react';
+import { Smartphone, Database, BrainCircuit, Activity, Users, Send, ArrowRight, Bell, Video, Ambulance, Hospital } from 'lucide-react';
 
 const steps = [
   { 
@@ -35,13 +35,25 @@ const steps = [
   { 
     icon: Video, 
     title: '6. Telehealth Consultation', 
-    desc: 'Patients connect instantly with healthcare professionals for remote consultations.',
+    desc: 'Patients connect instantly with healthcare professionals.',
     color: 'bg-cyan-500'
   },
   { 
+    icon: Ambulance, 
+    title: '7. Ambulance Dispatch', 
+    desc: 'Emergency services are triggered instantly for critical cases.',
+    color: 'bg-orange-500'
+  },
+  { 
+    icon: Hospital, 
+    title: '8. Hospital Admission', 
+    desc: 'Seamless coordination for fast and efficient hospital intake.',
+    color: 'bg-rose-600'
+  },
+  { 
     icon: Send, 
-    title: '7. Continuous Engagement', 
-    desc: 'Patients receive nudges, reminders, and ongoing guidance.',
+    title: '9. Continuous Engagement', 
+    desc: 'Patients receive ongoing support, nudges, and follow-ups post-care.',
     color: 'bg-amber-500'
   }
 ];
@@ -52,9 +64,9 @@ export default function CareLoopEcosystem() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-            THE PLATFORM
+            A Complete Care Loop
           </h2>
-          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap text-xs md:text-sm font-bold text-[#64748B] uppercase tracking-wider">
+          <div className="flex items-center justify-center gap-2 md:gap-3 flex-wrap text-[10px] md:text-xs font-bold text-[#64748B] uppercase tracking-wider">
             <span>Devices</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
             <span>Data</span>
@@ -67,39 +79,64 @@ export default function CareLoopEcosystem() {
             <ArrowRight className="w-3 h-3 text-slate-300" />
             <span className="text-cyan-600">Consultation</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
+            <span className="text-orange-600">Emergency</span>
+            <ArrowRight className="w-3 h-3 text-slate-300" />
+            <span className="text-rose-600">Admission</span>
+            <ArrowRight className="w-3 h-3 text-slate-300" />
             <span className="text-[#2563EB]">Outcomes</span>
           </div>
           <p className="mt-8 text-xl text-[#0F172A] font-medium leading-relaxed">
-            Intelligent Care, Delivered Continuously <br className="hidden sm:block" />
-            Our platform connects devices, data, AI, and care teams to enable <span className="text-[#2563EB]">real-time monitoring</span> and proactive intervention.
+            We don’t just collect health data. <br className="hidden sm:block" />
+            We <span className="text-[#2563EB]">manage the entire patient journey</span>.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 relative">
-          {/* Connecting Line (Desktop) */}
-          <div className="hidden lg:block absolute top-[52px] left-0 w-full h-0.5 bg-slate-100 -z-10" />
-
-          {steps.map((step, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="group"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className={`w-24 h-24 lg:w-26 lg:h-26 rounded-[28px] ${step.color} shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                  <step.icon className="w-10 h-10 text-white" />
-                </div>
-                <h3 className="text-sm font-extrabold text-[#0F172A] mb-3 tracking-tight leading-tight px-1">
-                  {step.title}
-                </h3>
-                <p className="text-[12px] text-[#64748B] leading-relaxed px-1">
-                  {step.desc}
-                </p>
+        <div className="space-y-16">
+          {[
+            { phase: 'Detection', color: 'text-blue-600', range: [0, 3] },
+            { phase: 'Response', color: 'text-emerald-600', range: [3, 6] },
+            { phase: 'Resolution', color: 'text-rose-600', range: [6, 9] }
+          ].map((group, groupIndex) => (
+            <div key={group.phase} className="relative">
+              <div className="flex items-center gap-4 mb-8">
+                <span className={`text-xs font-black uppercase tracking-[0.2em] ${group.color} bg-white px-2`}>
+                  Phase 0{groupIndex + 1}: {group.phase}
+                </span>
+                <div className="flex-1 h-px bg-slate-100" />
               </div>
-            </motion.div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                {steps.slice(group.range[0], group.range[1]).map((step, i) => {
+                  const globalIndex = group.range[0] + i;
+                  return (
+                    <motion.div
+                      key={step.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1 }}
+                      className="group flex flex-col items-start gap-4"
+                    >
+                      <div className={`w-16 h-16 rounded-[1.25rem] ${step.color} shadow-lg shadow-current/10 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                        <step.icon className="w-8 h-8 text-white" strokeWidth={2.5} />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Step 0{globalIndex + 1}</span>
+                        </div>
+                        <h3 className="text-xl font-extrabold text-[#0F172A] leading-tight tracking-tight">
+                          {step.title.split('. ')[1]}
+                        </h3>
+                        <p className="text-[#64748B] text-sm leading-relaxed max-w-[260px]">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
           ))}
         </div>
       </div>
