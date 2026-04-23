@@ -3,6 +3,20 @@ import { Thermometer, Heart, CloudLightning, Activity, ChevronRight } from 'luci
 
 const conditions = [
   {
+    icon: CloudLightning,
+    title: "Diabetes Management",
+    benefit: "Stabilize HbA1c levels with continuous glucose monitoring & alerts.",
+    color: "group-hover:bg-amber-500",
+    bg: "bg-amber-50"
+  },
+  {
+    icon: Activity,
+    title: "Hypertension Monitoring",
+    benefit: "Manage uncontrolled blood pressure with smart-cuff monitoring.",
+    color: "group-hover:bg-blue-500",
+    bg: "bg-blue-50"
+  },
+  {
     icon: Heart,
     title: "Cardiac Care",
     benefit: "40% reduction in cardiac readmissions through ECG tracking.",
@@ -10,22 +24,8 @@ const conditions = [
     bg: "bg-rose-50"
   },
   {
-    icon: CloudLightning,
-    title: "Diabetes",
-    benefit: "Stabilize HbA1c levels with continuous glucose monitoring & alerts.",
-    color: "group-hover:bg-amber-500",
-    bg: "bg-amber-50"
-  },
-  {
-    icon: Activity,
-    title: "Hypertension",
-    benefit: "Manage uncontrolled blood pressure with smart-cuff monitoring.",
-    color: "group-hover:bg-blue-500",
-    bg: "bg-blue-50"
-  },
-  {
     icon: Thermometer,
-    title: "Post-Discharge",
+    title: "Post-discharge Recovery",
     benefit: "Safe transition to home with early infection detection & vitals.",
     color: "group-hover:bg-teal-500",
     bg: "bg-teal-50"

@@ -14,7 +14,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-[#64748B] text-sm leading-[1.6]">
-            Revolutionizing remote care with continuous monitoring and AI-driven insights for clinical perfection.
+            Reimagining remote care with continuous monitoring and AI-driven insights.
           </p>
         </div>
 

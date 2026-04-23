@@ -14,10 +14,12 @@ export default function CTASection() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/20 blur-[80px] rounded-full" />
           
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight leading-tight relative z-10">
-            Start delivering proactive, <br className="hidden sm:block" />
-            continuous care.
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight relative z-10">
+            Start Delivering Proactive Care Today
           </h2>
+          <p className="text-slate-400 mb-10 relative z-10 text-lg">
+            Transform how you monitor, manage, and improve patient outcomes.
+          </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
             <motion.button 

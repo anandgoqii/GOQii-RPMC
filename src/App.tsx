@@ -2,7 +2,8 @@ import { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TrustScale from './components/TrustScale';
+import TrustBar from './components/TrustBar';
+import ProblemSolution from './components/ProblemSolution';
 import TheRPMKit from './components/TheRPMKit';
 import CareLoopEcosystem from './components/CareLoopEcosystem';
 import HumanAI from './components/HumanAI';
@@ -66,7 +67,8 @@ function LandingPage() {
     <>
       <main>
         <Hero />
-        <TrustScale />
+        <TrustBar />
+        <ProblemSolution />
         <CareLoopEcosystem />
         <HumanAI />
         <TheRPMKit />

@@ -19,8 +19,8 @@ const features = [
   },
   {
     icon: Activity,
-    title: "Continuous guidance",
-    desc: "Keeping patients inspired and active with experts always within reach."
+    title: "Continuous patient support",
+    desc: "Keeping patients engaged and compliant with care protocols through ongoing support."
   }
 ];
 
