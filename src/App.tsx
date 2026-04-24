@@ -12,8 +12,9 @@ import DashboardPreview from './components/DashboardPreview';
 import Conditions from './components/Conditions';
 import Outcomes from './components/Outcomes';
 import Audience from './components/Audience';
-import SaudiIntegration from './components/SaudiIntegration';
+import GlobalIntegration from './components/GlobalIntegration';
 import Compliance from './components/Compliance';
+import RPMCAppSection from './components/RPMCAppSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import DemoModal from './components/DemoModal';
@@ -24,6 +25,7 @@ import About from './pages/About';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import BehavioralScience from './pages/BehavioralScience';
+import RPMCApp from './pages/RPMCApp';
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -71,15 +73,15 @@ function LandingPage() {
       <main>
         <Hero />
         <ProblemSolution />
-        <CareLoopEcosystem />
         <HumanAI />
         <TheRPMKit />
+        <RPMCAppSection />
         <EngagementEngine />
         <DashboardPreview />
         <Conditions />
         <Outcomes />
         <Audience />
-        <SaudiIntegration />
+        <GlobalIntegration />
         <Compliance />
         <CTASection />
       </main>
@@ -115,6 +117,7 @@ export default function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/behavioral-science" element={<BehavioralScience />} />
+          <Route path="/rpmc-app" element={<RPMCApp />} />
         </Routes>
       </div>
     </BrowserRouter>

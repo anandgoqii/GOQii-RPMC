@@ -35,17 +35,17 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          {['Platform', 'RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Infrastructure', 'Compliance'].map((item) => (
+          {['RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
             <Link
               key={item}
               to={
                 item === 'About' ? '/about' : 
-                item === 'Infrastructure' ? '/#saudi-infrastructure' : 
+                item === 'Integration' ? '/#integration' : 
                 item === 'RPMC Kit' ? '/#kit' :
                 item === 'Compliance' ? '/#certifications' :
                 `/#${item.toLowerCase().replace(/\s+/g, '-')}`
               }
-              className="text-sm font-semibold text-[#64748B] hover:text-[#0F172A] transition-colors"
+              className="text-sm font-semibold text-[#64748B] hover:text-[#0F172A] transition-colors whitespace-nowrap"
             >
               {item}
             </Link>
@@ -76,12 +76,12 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-20 left-6 right-6 bg-white rounded-3xl p-8 shadow-2xl border border-slate-100 flex flex-col gap-6 md:hidden"
         >
-          {['Platform', 'RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Infrastructure', 'Compliance'].map((item) => (
+          {['RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
             <Link 
               key={item} 
               to={
                 item === 'About' ? '/about' : 
-                item === 'Infrastructure' ? '/#saudi-infrastructure' : 
+                item === 'Integration' ? '/#integration' : 
                 item === 'RPMC Kit' ? '/#kit' :
                 item === 'Compliance' ? '/#certifications' :
                 `/#${item.toLowerCase().replace(/\s+/g, '-')}`
