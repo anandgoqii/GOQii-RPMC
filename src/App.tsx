@@ -18,10 +18,12 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import DemoModal from './components/DemoModal';
 import VideoModal from './components/VideoModal';
+import ReadingModal from './components/ReadingModal';
 import ContactSales from './pages/ContactSales';
 import About from './pages/About';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import BehavioralScience from './pages/BehavioralScience';
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -99,6 +101,7 @@ export default function App() {
       <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-blue-100 selection:text-blue-900">
         <DemoModal />
         <VideoModal />
+        <ReadingModal />
         <Routes>
           <Route path="/" element={
             <>
@@ -111,6 +114,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/behavioral-science" element={<BehavioralScience />} />
         </Routes>
       </div>
     </BrowserRouter>

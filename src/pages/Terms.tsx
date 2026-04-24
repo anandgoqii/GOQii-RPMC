@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -183,14 +184,15 @@ export default function Terms() {
                 <p>These Terms shall be governed by and interpreted in accordance with applicable laws of the jurisdiction in which services are provided, including local regulatory requirements.</p>
               </section>
 
-              <section className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+              <section className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col items-center text-center">
                 <h2 className="text-2xl font-bold text-[#0F172A] mb-4">18. Contact Information</h2>
-                <p>For questions regarding these Terms:</p>
-                <div className="mt-4 font-bold text-[#0F172A]">
-                  <p>GOQii HealthEngage RPMC</p>
-                  <p>Email: legal@goqii.com</p>
-                  <p>Address: [Insert Address]</p>
-                </div>
+                <p className="mb-8">For questions regarding these Terms, please reach out to our team.</p>
+                <Link 
+                  to="/contact-sales"
+                  className="px-8 py-3 bg-[#2563EB] text-white rounded-full font-bold hover:shadow-lg transition-all"
+                >
+                  Contact Us
+                </Link>
               </section>
             </div>
           </motion.div>

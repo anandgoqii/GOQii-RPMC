@@ -1,15 +1,24 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function DemoModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const handleOpen = () => setIsOpen(true);
+    const handleOpen = () => {
+      setIsOpen(true);
+      setIsSubmitted(false);
+    };
     window.addEventListener('open-demo-modal', handleOpen);
     return () => window.removeEventListener('open-demo-modal', handleOpen);
   }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+  };
 
   return (
     <AnimatePresence>
@@ -29,110 +38,135 @@ export default function DemoModal() {
               <X className="w-5 h-5" />
             </button>
 
-            <h3 className="text-2xl font-bold text-[#0F172A] mb-8">Request a Demo</h3>
+            {!isSubmitted ? (
+              <>
+                <h3 className="text-2xl font-bold text-[#0F172A] mb-8">Request a Demo</h3>
 
-            <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); setIsOpen(false); }}>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    required
-                    type="text"
-                    placeholder="Dr. Ahmed Al-Rashid"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Email *
-                  </label>
-                  <input
-                    required
-                    type="email"
-                    placeholder="ahmed@hospital.sa"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Facility Name *
-                  </label>
-                  <input
-                    required
-                    type="text"
-                    placeholder="King Faisal Hospital"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="+966 5X XXX XXXX"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                  Facility OID
-                </label>
-                <input
-                  type="text"
-                  placeholder="2.16.840.1.113883..."
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                  Integration Priority
-                </label>
-                <div className="relative">
-                  <select 
-                    defaultValue=""
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm appearance-none bg-transparent"
-                  >
-                    <option value="" disabled>Select priority</option>
-                    <option value="high">High - Immediate</option>
-                    <option value="medium">Medium - Next 3 months</option>
-                    <option value="low">Low - Exploring options</option>
-                  </select>
-                  <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none">
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1.5L6 6.5L11 1.5" stroke="#64748B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                        Full Name *
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        placeholder="Dr. Ahmed Al-Rashid"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                        Email *
+                      </label>
+                      <input
+                        required
+                        type="email"
+                        placeholder="ahmed@hospital.sa"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
+                      />
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your monitoring needs..."
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm resize-none"
-                />
-              </div>
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                        Facility Name *
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        placeholder="King Faisal Hospital"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                        Phone
+                      </label>
+                      <input
+                        type="tel"
+                        placeholder="+966 5X XXX XXXX"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
+                      />
+                    </div>
+                  </div>
 
-              <button
-                type="submit"
-                className="w-full bg-[#0b1c39] hover:bg-slate-800 text-white font-semibold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-colors"
-              >
-                Request a Demo
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </form>
+                  <div>
+                    <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                      Facility OID
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="2.16.840.1.113883..."
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                      Integration Priority
+                    </label>
+                    <div className="relative">
+                      <select 
+                        defaultValue=""
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm appearance-none bg-transparent"
+                      >
+                        <option value="" disabled>Select priority</option>
+                        <option value="high">High - Immediate</option>
+                        <option value="medium">Medium - Next 3 months</option>
+                        <option value="low">Low - Exploring options</option>
+                      </select>
+                      <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L6 6.5L11 1.5" stroke="#64748B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-[#0F172A] mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      rows={4}
+                      placeholder="Tell us about your monitoring needs..."
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB]/20 focus:border-[#2563EB] transition-all text-sm resize-none"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-[#0b1c39] hover:bg-slate-800 text-white font-semibold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                  >
+                    Request a Demo
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </form>
+              </>
+            ) : (
+              <div className="py-12 text-center">
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                  className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                >
+                  <CheckCircle2 className="w-10 h-10 text-green-600" />
+                </motion.div>
+                <h3 className="text-3xl font-bold text-[#0F172A] mb-4">Thank You!</h3>
+                <p className="text-[#64748B] text-lg mb-10 max-w-sm mx-auto">
+                  Your request has been received. Our team will contact you shortly to schedule a personalized demonstration.
+                </p>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="px-10 py-4 bg-[#0b1c39] hover:bg-slate-800 text-white rounded-xl font-bold transition-all"
+                >
+                  Close
+                </button>
+              </div>
+            )}
           </motion.div>
         </div>
       )}

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Target, MessageCircle, Trophy, Activity, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -58,9 +59,12 @@ export default function EngagementEngine() {
               ))}
             </div>
             
-            <button className="flex items-center gap-2 font-bold text-[#2563EB] hover:gap-3 transition-all">
+            <Link 
+              to="/behavioral-science"
+              className="flex items-center gap-2 font-bold text-[#2563EB] hover:gap-3 transition-all"
+            >
               Learn about our behavioral science <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </motion.div>
 
           <motion.div
@@ -104,7 +108,10 @@ export default function EngagementEngine() {
                    </div>
                 </div>
                 
-                <button className="w-full py-3 rounded-xl bg-[#2563EB] text-white font-bold shadow-md hover:bg-[#1D4ED8] transition-colors">
+                <button 
+                  onClick={() => window.dispatchEvent(new CustomEvent('open-reading-modal'))}
+                  className="w-full py-3 rounded-xl bg-[#2563EB] text-white font-bold shadow-md hover:bg-[#1D4ED8] transition-colors"
+                >
                   Take Today's Reading
                 </button>
               </div>

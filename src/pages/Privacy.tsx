@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -155,14 +156,15 @@ export default function Privacy() {
                 <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
               </section>
 
-              <section className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+              <section className="bg-slate-50 p-8 rounded-3xl border border-slate-100 flex flex-col items-center text-center">
                 <h2 className="text-2xl font-bold text-[#0F172A] mb-4">12. Contact Us</h2>
-                <p>For questions or requests regarding this Privacy Policy, please contact:</p>
-                <div className="mt-4 font-bold text-[#0F172A]">
-                  <p>GOQii HealthEngage RPMC</p>
-                  <p>Email: privacy@goqii.com</p>
-                  <p>Address: [Insert Address]</p>
-                </div>
+                <p className="mb-8">For questions or requests regarding this Privacy Policy, please reach out to our team.</p>
+                <Link 
+                  to="/contact-sales"
+                  className="px-8 py-3 bg-[#2563EB] text-white rounded-full font-bold hover:shadow-lg transition-all"
+                >
+                  Contact Us
+                </Link>
               </section>
             </div>
           </motion.div>

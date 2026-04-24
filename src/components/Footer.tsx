@@ -24,6 +24,7 @@ export default function Footer() {
           <ul className="space-y-4">
             <li><Link to="/#platform" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Platform</Link></li>
             <li><Link to="/#kit" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPMC Kit</Link></li>
+            <li><Link to="/behavioral-science" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Behavioral Science</Link></li>
             <li><Link to="/#intelligence" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Intelligence</Link></li>
             <li><Link to="/#saudi-infrastructure" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Infrastructure</Link></li>
             <li><Link to="/#certifications" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Compliance</Link></li>
