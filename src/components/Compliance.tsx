@@ -1,94 +1,50 @@
 import { motion } from 'motion/react';
-import { ShieldCheck, FileKey, Share2, Lock, ListChecks, CheckCircle2 } from 'lucide-react';
+import { Shield, HeartPulse, Globe, ShieldCheck, Database, Key } from 'lucide-react';
 
-const categories = [
-  {
-    title: 'DATA PRIVACY & SECURITY',
-    icon: ShieldCheck,
-    items: [
-      { name: 'HIPAA', desc: 'Ensuring secure handling of patient health information' },
-      { name: 'GDPR', desc: 'Protecting user data privacy across global regions' },
-      { name: 'PDPL (Saudi Arabia)', desc: 'Compliant with Saudi Personal Data Protection Law' }
-    ]
-  },
-  {
-    title: 'CLINICAL & INTEROPERABILITY',
-    icon: Share2,
-    items: [
-      { name: 'HL7 FHIR', desc: 'Seamless healthcare data exchange across systems' },
-      { name: 'ICD-10-AM & SBS/ACHI', desc: 'Standardized clinical coding integration' }
-    ]
-  },
-  {
-    title: 'INFRASTRUCTURE & SECURITY',
-    icon: Lock,
-    items: [
-      { name: 'ISO 27001', desc: 'Enterprise-grade information security management' },
-      { name: 'End-to-End Encryption', desc: 'Secure data transmission and storage' },
-      { name: 'Audit Logs & Access Control', desc: 'Full traceability and role-based permissions' }
-    ]
-  }
+const standards = [
+  { name: 'ISO 27001', icon: Shield },
+  { name: 'HIPAA', icon: HeartPulse },
+  { name: 'GDPR', icon: Globe },
+  { name: 'PDPL', icon: ShieldCheck },
+  { name: 'Data Residency', icon: Database },
+  { name: 'RBAC', icon: Key },
 ];
 
 export default function Compliance() {
   return (
-    <section className="py-24 bg-[#F8FAFC]" id="certifications">
+    <section className="py-24 bg-white" id="certifications">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-block px-4 py-1.5 bg-white border border-[#E2E8F0] rounded-full text-[#64748B] text-[11px] font-bold uppercase tracking-wider mb-6">
-            Compliance & Certifications
-          </span>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-sm font-bold text-[#2563EB] uppercase tracking-[0.2em] mb-4">
+            Enterprise-Grade Security & Compliance
+          </h2>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-            Built on Global Standards. <br />
+            Built on Global Standards. <br className="hidden sm:block" />
             <span className="text-[#2563EB]">Trusted Locally.</span>
           </h2>
-          <p className="text-lg text-[#64748B] leading-[1.6]">
+          <p className="text-lg text-[#64748B] leading-relaxed">
             Our platform adheres to international healthcare, security, and data protection standards — ensuring safe, compliant, and reliable care delivery at scale.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {categories.map((cat, i) => (
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
+          {standards.map((item, i) => (
             <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
+              key={item.name}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white p-10 rounded-[32px] border border-[#E2E8F0] shadow-sm hover:shadow-xl transition-all duration-300 group"
+              transition={{ delay: i * 0.05 }}
+              className="group bg-white border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md hover:border-blue-100 transition-all text-center flex flex-col items-center gap-4"
             >
-              <div className="w-14 h-14 rounded-2xl bg-[#F8FAFC] flex items-center justify-center mb-8 border border-[#E2E8F0] group-hover:bg-[#2563EB] transition-colors">
-                <cat.icon className="w-7 h-7 text-[#2563EB] group-hover:text-white transition-colors" />
+              <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                <item.icon className="w-6 h-6 text-slate-400 group-hover:text-[#2563EB] transition-colors" strokeWidth={1.5} />
               </div>
-              <h3 className="text-sm font-extrabold text-[#94A3B8] tracking-[1.5px] uppercase mb-8">
-                {cat.title}
-              </h3>
-              <div className="space-y-8">
-                {cat.items.map((item, idx) => (
-                  <div key={idx} className="relative pl-6">
-                    <div className="absolute left-0 top-1.5 w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
-                    <h4 className="text-lg font-bold text-[#0F172A] mb-1">{item.name}</h4>
-                    <p className="text-sm text-[#64748B] leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
+              <span className="text-xs font-extrabold text-[#0F172A] uppercase tracking-wider">
+                {item.name}
+              </span>
             </motion.div>
           ))}
-        </div>
-
-        <div className="mt-16 pt-16 border-t border-[#E2E8F0] grid md:grid-cols-3 gap-8 text-center text-[#64748B]">
-          <div className="flex flex-col items-center gap-4">
-            <h4 className="text-[#0F172A] font-bold tracking-tight">Enterprise Infrastructure</h4>
-            <p className="text-sm">Built for high availability and low-latency healthcare operations.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <h4 className="text-[#0F172A] font-bold tracking-tight">Global Capability</h4>
-            <p className="text-sm">Multi-region deployment ready with localized data sovereignty.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <h4 className="text-[#0F172A] font-bold tracking-tight">Secure & Compliant</h4>
-            <p className="text-sm">Rigorous security audits and end-to-end clinical data encryption.</p>
-          </div>
         </div>
       </div>
     </section>

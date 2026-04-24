@@ -170,7 +170,7 @@ export default function About() {
         <section className="px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#0F172A] to-[#1E293B] rounded-[40px] p-16 text-white overflow-hidden relative shadow-2xl">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/30 blur-[80px] rounded-full" />
-            <h2 className="text-4xl font-extrabold mb-6 relative z-10">Let’s Build the Future of Care Together</h2>
+            <h2 className="text-4xl font-extrabold text-white mb-6 relative z-10">Let’s Build the Future of Care Together</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
               <button 
                 onClick={() => window.dispatchEvent(new CustomEvent('open-demo-modal'))}

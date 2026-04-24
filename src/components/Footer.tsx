@@ -24,6 +24,7 @@ export default function Footer() {
           <ul className="space-y-4">
             <li><Link to="/#platform" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Platform</Link></li>
             <li><Link to="/#kit" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPMC Kit</Link></li>
+            <li><Link to="/#intelligence" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Intelligence</Link></li>
             <li><Link to="/#saudi-infrastructure" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Infrastructure</Link></li>
             <li><Link to="/#certifications" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Compliance</Link></li>
           </ul>
@@ -44,9 +45,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-[#F1F5F9] flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-[#94A3B8] text-[12px]">© 2026 GOQii HealthEngage RPMC</p>
         <div className="flex items-center gap-6">
-          <a href="#" className="text-[#94A3B8] text-[12px] hover:text-[#0F172A] transition-colors">Privacy Policy</a>
+          <Link to="/privacy" className="text-[#94A3B8] text-[12px] hover:text-[#0F172A] transition-colors">Privacy Policy</Link>
           <span className="text-[#E2E8F0]">|</span>
-          <a href="#" className="text-[#94A3B8] text-[12px] hover:text-[#0F172A] transition-colors">Terms</a>
+          <Link to="/terms" className="text-[#94A3B8] text-[12px] hover:text-[#0F172A] transition-colors">Terms of Service</Link>
         </div>
       </div>
     </footer>

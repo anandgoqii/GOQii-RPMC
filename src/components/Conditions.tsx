@@ -41,9 +41,6 @@ export default function Conditions() {
             <h2 className="text-4xl font-extrabold text-[#0F172A] mb-6 tracking-tight">Built for Complex care.</h2>
             <p className="text-lg text-[#64748B] leading-[1.6]">Tailored monitoring protocols for the challenges that impact your clinical outcomes most.</p>
           </div>
-          <button className="flex items-center gap-2 font-bold text-[#2563EB] hover:gap-3 transition-all">
-            See all use cases <ChevronRight className="w-5 h-5" />
-          </button>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

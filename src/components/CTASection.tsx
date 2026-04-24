@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function CTASection() {
   return (
@@ -14,7 +13,7 @@ export default function CTASection() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/20 blur-[80px] rounded-full" />
           
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight relative z-10">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight relative z-10">
             Start Delivering Proactive Care Today
           </h2>
           <p className="text-slate-400 mb-10 relative z-10 text-lg">
@@ -31,12 +30,6 @@ export default function CTASection() {
               Book Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.button>
-            <Link 
-              to="/contact-sales"
-              className="flex items-center gap-2 px-10 py-4 rounded-full font-bold text-white hover:bg-white/10 border border-white/20 transition-all text-center justify-center"
-            >
-              Talk to Expert
-            </Link>
           </div>
         </motion.div>
       </div>

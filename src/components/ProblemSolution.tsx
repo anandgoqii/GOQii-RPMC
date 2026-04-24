@@ -45,7 +45,7 @@ export default function ProblemSolution() {
             <span className="inline-block px-4 py-1.5 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[11px] font-bold uppercase tracking-wider mb-6">
               Our Solution
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
               A Complete <span className="text-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Remote Care Ecosystem</span>
             </h2>
             <p className="text-xl text-slate-400 font-medium">
@@ -54,7 +54,7 @@ export default function ProblemSolution() {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-20">
-            {['Devices', 'Data', 'Intelligence', 'Action', 'Outcomes'].map((item, i) => (
+            {['Devices', 'Platform Intelligence', 'Action', 'Outcomes'].map((item, i) => (
               <div key={i} className="flex items-center gap-3 md:gap-6">
                 <div className="flex flex-col items-center">
                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-3 group hover:border-blue-500/50 transition-colors">
@@ -71,15 +71,15 @@ export default function ProblemSolution() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all">
-               <h3 className="text-xl font-bold mb-4">Continuous Monitoring</h3>
+               <h3 className="text-xl font-bold text-white mb-4">Continuous Monitoring</h3>
                <p className="text-slate-400 text-sm leading-relaxed">Moving from snapshot data to a 24/7 view of patient health through medical-grade devices.</p>
             </div>
             <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all">
-               <h3 className="text-xl font-bold mb-4">Proactive Intervention</h3>
+               <h3 className="text-xl font-bold text-white mb-4">Proactive Intervention</h3>
                <p className="text-slate-400 text-sm leading-relaxed">AI analyzes trends to flag risks before they become emergencies, triggering clinical action.</p>
             </div>
             <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all">
-               <h3 className="text-xl font-bold mb-4">Engagement & Adherence</h3>
+               <h3 className="text-xl font-bold text-white mb-4">Engagement & Adherence</h3>
                <p className="text-slate-400 text-sm leading-relaxed">Human-led care loops supported by automated nudges keep patients on track with their treatment plans.</p>
             </div>
           </div>

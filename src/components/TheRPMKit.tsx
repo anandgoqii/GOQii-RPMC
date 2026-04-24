@@ -40,7 +40,7 @@ export default function TheRPMKit() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-[#F8FAFC] border border-[#E2E8F0] rounded-full text-[#64748B] text-[11px] font-bold uppercase tracking-wider mb-6">
-            The RPMC Kit
+            GOQii HealthEngage RPMC Kit
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6 tracking-tight">
             Everything Patients Need. <br className="hidden sm:block" />
@@ -67,7 +67,7 @@ export default function TheRPMKit() {
           <div className="lg:col-span-5 relative w-full h-[400px] lg:h-[650px] bg-[#F8FAFC] rounded-[32px] border border-[#E2E8F0] overflow-hidden shadow-sm flex items-center justify-center">
              <img 
                src="https://demorpmcv.goqii.com/assets/rpmc-kit-B74qYOLa.jpg" 
-               alt="The RPMC Kit" 
+               alt="GOQii HealthEngage RPMC Kit" 
                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
              />
              {/* Subtle inner shadow overlay to give it depth inside the border */}

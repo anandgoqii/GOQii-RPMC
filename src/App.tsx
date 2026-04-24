@@ -2,7 +2,6 @@ import { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TrustBar from './components/TrustBar';
 import ProblemSolution from './components/ProblemSolution';
 import TheRPMKit from './components/TheRPMKit';
 import CareLoopEcosystem from './components/CareLoopEcosystem';
@@ -21,6 +20,8 @@ import DemoModal from './components/DemoModal';
 import VideoModal from './components/VideoModal';
 import ContactSales from './pages/ContactSales';
 import About from './pages/About';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -67,7 +68,6 @@ function LandingPage() {
     <>
       <main>
         <Hero />
-        <TrustBar />
         <ProblemSolution />
         <CareLoopEcosystem />
         <HumanAI />
@@ -109,6 +109,8 @@ export default function App() {
           } />
           <Route path="/contact-sales" element={<ContactSales />} />
           <Route path="/about" element={<About />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
     </BrowserRouter>

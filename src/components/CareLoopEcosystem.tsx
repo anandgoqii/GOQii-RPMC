@@ -10,7 +10,7 @@ const steps = [
   },
   { 
     icon: Database, 
-    title: '2. Data Platform', 
+    title: '2. Platform Intelligence', 
     desc: 'All health data is securely aggregated and structured.',
     color: 'bg-indigo-500'
   },
@@ -69,11 +69,7 @@ export default function CareLoopEcosystem() {
           <div className="flex items-center justify-center gap-2 md:gap-3 flex-wrap text-[10px] md:text-xs font-bold text-[#64748B] uppercase tracking-wider">
             <span>Devices</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span>Data</span>
-            <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span>Intelligence</span>
-            <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span className="text-red-500">Alerts</span>
+            <span>Platform Intelligence</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
             <span>Action</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />

@@ -22,7 +22,7 @@ const readmissionsData = [
 
 export default function DashboardPreview() {
   return (
-    <section className="py-24 overflow-hidden bg-white" id="data">
+    <section className="py-24 overflow-hidden bg-white" id="intelligence">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1">
