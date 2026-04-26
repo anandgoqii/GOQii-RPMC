@@ -76,6 +76,7 @@ function LandingPage() {
         <HumanAI />
         <TheRPMKit />
         <RPMCAppSection />
+        <CareLoopEcosystem />
         <EngagementEngine />
         <DashboardPreview />
         <Conditions />

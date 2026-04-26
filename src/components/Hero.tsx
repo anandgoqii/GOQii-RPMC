@@ -31,14 +31,14 @@ export default function Hero() {
           </div>
           
           <h1 className="text-[56px] leading-[1.1] font-extrabold text-[#0F172A] tracking-[-1.5px] mb-6">
-            Beyond Monitoring. <br />
+            Connected Care, <br />
             <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">
-              Into Continuous Care.
+              Delivered Continuously
             </span>
           </h1>
           
           <p className="text-lg text-[#64748B] leading-[1.6] max-w-[480px] mb-8">
-            An AI-powered remote patient monitoring ecosystem that connects devices, data, and care teams to deliver real-time intervention and better outcomes.
+            Real-time patient monitoring through connected medical devices, enabling care teams to stay informed and take timely action for better outcomes.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
