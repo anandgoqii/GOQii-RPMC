@@ -14,7 +14,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-[#64748B] text-sm leading-[1.6]">
-            Reimagining remote care with continuous monitoring and AI-driven insights.
+            Reimagining remote care with continuous monitoring and Predictive Logic-driven insights.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function Footer() {
             <li><Link to="/#kit" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPMC Kit</Link></li>
             <li><Link to="/rpmc-app" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">RPMC App</Link></li>
             <li><Link to="/behavioral-science" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Behavioral Science</Link></li>
-            <li><Link to="/#intelligence" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Intelligence</Link></li>
+            <li><Link to="/#ews-engine" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">EWS Engine</Link></li>
             <li><Link to="/#integration" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Integration</Link></li>
             <li><Link to="/#certifications" className="text-[#64748B] text-sm hover:text-[#0F172A] transition-colors">Compliance</Link></li>
           </ul>

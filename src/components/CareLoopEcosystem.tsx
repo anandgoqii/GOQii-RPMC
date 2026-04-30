@@ -5,25 +5,25 @@ const steps = [
   { 
     icon: Smartphone, 
     title: '1. Connected Devices', 
-    desc: 'Medical-grade devices capture real-time patient vitals.',
+    desc: 'Medical-grade devices capture real-time clinical vitals.',
     color: 'bg-blue-500'
   },
   { 
     icon: Database, 
     title: '2. Data Platform', 
-    desc: 'All health data is securely aggregated and structured.',
+    desc: 'All clinical vitals are securely aggregated and structured.',
     color: 'bg-indigo-500'
   },
   { 
     icon: BrainCircuit, 
-    title: '3. AI Intelligence', 
-    desc: 'Risk patterns are identified early using predictive models.',
+    title: '3. Standardized EWS Algorithms', 
+    desc: 'Our engine maps live vitals against EWS (Early Warning Score) standards to identify deterioration early.',
     color: 'bg-purple-500'
   },
   { 
     icon: Bell, 
     title: '4. Real-Time Alerts', 
-    desc: 'Critical health changes trigger instant alerts for timely intervention.',
+    desc: 'Clinical Command Center triggers immediate, role-based intervention protocols.',
     color: 'bg-red-500'
   },
   { 
@@ -53,7 +53,7 @@ const steps = [
   { 
     icon: Send, 
     title: '9. Continuous Engagement', 
-    desc: 'Patients receive ongoing support, nudges, and follow-ups post-care.',
+    desc: 'Patients receive ongoing support, Care Pathways, and follow-ups post-care.',
     color: 'bg-amber-500'
   }
 ];
@@ -64,18 +64,18 @@ export default function CareLoopEcosystem() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-            A Complete Care Loop
+            A Complete Clinical Intervention Loop
           </h2>
           <div className="flex items-center justify-center gap-2 md:gap-3 flex-wrap text-[10px] md:text-xs font-bold text-[#64748B] uppercase tracking-wider">
             <span>Devices</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span>Data</span>
+            <span>Clinical Vitals</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span>Intelligence</span>
+            <span>Standardized EWS Algorithms</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
             <span>Alerts</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
-            <span>Action</span>
+            <span>CLINICAL INTERVENTION</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
             <span className="text-cyan-600">Consultation</span>
             <ArrowRight className="w-3 h-3 text-slate-300" />
@@ -86,7 +86,7 @@ export default function CareLoopEcosystem() {
             <span className="text-[#2563EB]">Outcomes</span>
           </div>
           <p className="mt-8 text-xl text-[#0F172A] font-medium leading-relaxed">
-            We don’t just collect health data. <br className="hidden sm:block" />
+            We don’t just collect clinical vitals. <br className="hidden sm:block" />
             We <span className="text-[#2563EB]">manage the entire patient journey</span>.
           </p>
         </div>

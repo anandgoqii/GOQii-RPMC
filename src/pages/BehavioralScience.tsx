@@ -7,12 +7,12 @@ const pillars = [
   {
     title: 'Trigger → Action → Reward',
     icon: Zap,
-    desc: 'We design interventions that follow a simple loop: Timely alerts or nudges, small achievable health steps, and positive reinforcement.'
+    desc: 'We design interventions that follow a simple loop: Timely alerts or Care Pathways, small achievable health steps, and positive reinforcement.'
   },
   {
-    title: 'Personalized Nudges',
+    title: 'Personalized Care Pathways',
     icon: MessageSquare,
-    desc: 'Every patient is different. We tailor the timing, messaging, and intensity of interventions based on behavior patterns and health data.'
+    desc: 'Every patient is different. We tailor the timing, messaging, and intensity of interventions based on behavior patterns and clinical vitals.'
   },
   {
     title: 'Micro-Interventions',
@@ -50,8 +50,8 @@ export default function BehavioralScience() {
                 transition={{ delay: 0.1 }}
                 className="text-5xl md:text-7xl font-extrabold text-[#0F172A] mb-8 tracking-tight leading-[1.05]"
               >
-                Turning Data into Action. <br />
-                <span className="text-blue-600">Action into Outcomes.</span>
+                Turning Data into CLINICAL INTERVENTION. <br />
+                <span className="text-blue-600">Intervention into Outcomes.</span>
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function BehavioralScience() {
                 transition={{ delay: 0.2 }}
                 className="text-xl text-[#64748B] leading-relaxed mb-12"
               >
-                At GOQii HealthEngage RPMC, we don’t just monitor health — we influence behavior. Our platform combines real-time data, AI insights, and behavioral science principles to drive sustained lifestyle change.
+                At GOQii HealthEngage RPMC, we don’t just monitor health — we influence behavior. Our platform combines real-time clinical vitals, Predictive insights, and behavioral science principles to drive sustained lifestyle change.
               </motion.p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function BehavioralScience() {
               <div>
                 <h2 className="text-4xl font-extrabold text-[#0F172A] mb-8 tracking-tight">Why Behavior Matters</h2>
                 <p className="text-lg text-[#64748B] leading-relaxed mb-8">
-                  Most health conditions are not caused by lack of data — they are caused by lack of consistent action. This is where traditional monitoring fails.
+                  Most health conditions are not caused by lack of data — they are caused by lack of consistent CLINICAL INTERVENTION. This is where traditional monitoring fails.
                 </p>
                 <div className="space-y-4">
                   {[
@@ -128,7 +128,7 @@ export default function BehavioralScience() {
           </div>
         </section>
 
-        {/* Human + AI */}
+        {/* Human + EWS Engine */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="bg-[#0F172A] rounded-[48px] p-12 md:p-20 text-white overflow-hidden relative">
@@ -144,7 +144,7 @@ export default function BehavioralScience() {
                   </p>
                   <ul className="space-y-6">
                     {[
-                      { title: 'AI Intelligence', desc: 'Identifies when intervention is needed before it becomes critical' },
+                      { title: 'Predictive Intelligence', desc: 'Identifies when intervention is needed before it becomes critical' },
                       { title: 'Human Coaches', desc: 'Care teams provide empathy, motivation, and practical support' },
                       { title: 'Balanced Care', desc: 'Patients receive both precise data and meaningful human interaction' }
                     ].map((item, i) => (

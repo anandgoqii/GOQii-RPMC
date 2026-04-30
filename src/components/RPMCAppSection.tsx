@@ -76,7 +76,7 @@ export default function RPMCAppSection() {
 
               <div className="grid sm:grid-cols-2 gap-8 mb-12">
                 {[
-                  { icon: Activity, label: 'Real-time health tracking' },
+                  { icon: Activity, label: 'Real-time clinical vitals tracking' },
                   { icon: Bell, label: 'Alerts & smart reminders' },
                   { icon: Video, label: 'Telehealth access' },
                   { icon: Zap, label: 'Continuous engagement' }
@@ -93,7 +93,7 @@ export default function RPMCAppSection() {
               <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm mb-12">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Experience it seamlessly</h4>
                 <div className="flex flex-wrap items-center gap-3">
-                   {['Devices', 'App', 'AI', 'Care Team', 'Action'].map((step, i, arr) => (
+                   {['Devices', 'App', 'EWS Engine', 'Care Team', 'CLINICAL INTERVENTION'].map((step, i, arr) => (
                      <div key={i} className="flex items-center gap-3">
                         <span className="text-sm font-bold text-[#0F172A]">{step}</span>
                         {i < arr.length - 1 && <ArrowRight className="w-4 h-4 text-slate-200" />}

@@ -61,7 +61,7 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-[#0F172A] mb-4">Our Mission</h2>
               <p className="text-[#64748B] text-lg leading-relaxed">
-                We combine connected devices, AI-driven insights, and human-led interventions to deliver continuous, proactive healthcare at scale.
+                We combine connected devices, PREDICTIVE ANALYTIC ENGINE insights, and human-led interventions to deliver continuous, proactive healthcare at scale.
               </p>
             </motion.div>
           </div>
@@ -71,14 +71,14 @@ export default function About() {
         <section className="px-6 py-32 max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-[#0F172A] mb-6 tracking-tight">What We Do</h2>
-            <p className="text-lg text-[#64748B]">A complete Remote Patient Monitoring ecosystem.</p>
+            <p className="text-lg text-[#64748B]">A complete Clinical Intervention Loop.</p>
           </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { title: 'Connected medical devices', icon: Activity },
               { title: 'Real-time health tracking', icon: BarChart3 },
-              { title: 'AI-powered risk detection', icon: Zap },
+              { title: 'EWS-powered risk detection', icon: Zap },
               { title: 'Clinical care dashboards', icon: ShieldCheck },
               { title: 'Engagement & Intervention', icon: Users },
               { title: 'Global Standards', icon: Globe2 }
@@ -135,7 +135,7 @@ export default function About() {
               <h2 className="text-3xl font-extrabold text-[#0F172A] mb-8">Technology + <br/>Human Care</h2>
               <div className="space-y-8">
                 {[
-                  { l: "AI Risk Signals", d: "Early identification of deterioration signs." },
+                  { l: "EWS Risk Signals", d: "Early identification of deterioration signs." },
                   { l: "Care Team Alerts", d: "Real-time notifications sent to clinicians." },
                   { l: "Timely Interventions", d: "Direct support when it's needed most." },
                   { l: "Behavior Change", d: "Continuous guidance for healthier life habits." }

@@ -15,7 +15,7 @@ export default function ProblemSolution() {
               </div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight leading-tight">
                 Healthcare doesn’t fail due to lack of data. <br />
-                <span className="text-[#64748B]">It fails due to lack of timely action.</span>
+                <span className="text-[#64748B]">It fails due to lack of timely CLINICAL INTERVENTION.</span>
               </h2>
               <div className="space-y-4 text-lg text-[#64748B] leading-relaxed">
                 <p>Patients drop off. Conditions worsen. Intervention comes too late because traditional care models rely on reactive encounters.</p>
@@ -29,6 +29,10 @@ export default function ProblemSolution() {
               <div className="p-8 bg-[#F8FAFC] rounded-3xl border border-[#E2E8F0]">
                 <div className="text-[#EF4444] font-bold mb-2">The Engagement Gap</div>
                 <p className="text-sm text-[#64748B]">Without continuous feedback, patients lose motivation and adherence plummeting within 30 days of discharge.</p>
+              </div>
+              <div className="p-8 bg-[#F8FAFC] rounded-3xl border border-[#E2E8F0]">
+                <div className="text-[#EF4444] font-bold mb-2">The Alert Fatigue</div>
+                <p className="text-sm text-[#64748B]">Clinicians are overwhelmed by false alarms from inaccurate sensors. Our system filters noise through validated vital thresholds, ensuring only significant clinical events reach the team.</p>
               </div>
             </div>
           </div>
@@ -46,15 +50,15 @@ export default function ProblemSolution() {
               Our Solution
             </span>
             <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
-              A Complete <span className="text-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Remote Care Ecosystem</span>
+              A Complete <span className="text-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Clinical Intervention Loop</span>
             </h2>
             <p className="text-xl text-slate-400 font-medium">
-              We connect devices, AI intelligence, and care teams to deliver continuous, proactive healthcare beyond hospital walls.
+              We connect devices, EWS Engine, and care teams to deliver continuous, proactive healthcare beyond hospital walls.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-20">
-            {['Devices', 'Platform Intelligence', 'Action', 'Outcomes'].map((item, i) => (
+            {['Devices', 'EWS Engine', 'CLINICAL INTERVENTION', 'Outcomes'].map((item, i) => (
               <div key={i} className="flex items-center gap-3 md:gap-6">
                 <div className="flex flex-col items-center">
                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-3 group hover:border-blue-500/50 transition-colors">
@@ -76,11 +80,11 @@ export default function ProblemSolution() {
             </div>
             <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all">
                <h3 className="text-xl font-bold text-white mb-4">Proactive Intervention</h3>
-               <p className="text-slate-400 text-sm leading-relaxed">AI analyzes trends to flag risks before they become emergencies, triggering clinical action.</p>
+               <p className="text-slate-400 text-sm leading-relaxed">Standardized EWS Algorithms. Our engine maps live vitals against clinical standards to identify deterioration early.</p>
             </div>
             <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all">
                <h3 className="text-xl font-bold text-white mb-4">Engagement & Adherence</h3>
-               <p className="text-slate-400 text-sm leading-relaxed">Human-led care loops supported by automated nudges keep patients on track with their treatment plans.</p>
+               <p className="text-slate-400 text-sm leading-relaxed">Human-led care loops supported by Clinical Protocols keep patients on track with their treatment plans.</p>
             </div>
           </div>
         </div>

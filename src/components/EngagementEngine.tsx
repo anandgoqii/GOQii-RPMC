@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const features = [
   {
     icon: MessageCircle,
-    title: "Smart nudges",
-    desc: "AI-driven prompts that guide patients to take readings and stay synchronized."
+    title: "Care Pathways",
+    desc: "Engine-driven prompts that guide patients to take readings and stay synchronized."
   },
   {
     icon: Target,

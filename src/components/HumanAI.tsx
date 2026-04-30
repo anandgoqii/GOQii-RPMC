@@ -15,15 +15,15 @@ export default function HumanAI() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1.5 bg-white border border-[#E2E8F0] rounded-full text-[#64748B] text-[11px] font-bold uppercase tracking-wider mb-6">
-              Human + AI Care
+              Clinician-Led, Analytics-Driven Oversight
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-8 tracking-tight">
-              Human + <br />
-              <span className="text-[#2563EB]">AI Care</span>
+              Clinician-Led <br />
+              <span className="text-[#2563EB]">Analytics-Driven</span>
             </h2>
             <p className="text-xl text-[#0F172A] font-medium mb-12 leading-relaxed">
-              AI identifies risks. <br />
-              <span className="underline decoration-[#0D9488] decoration-4 underline-offset-4">Care teams take action.</span>
+              Algorithms detect threshold breaches. <br />
+              <span className="underline decoration-[#0D9488] decoration-4 underline-offset-4">Care teams perform CLINICAL INTERVENTION.</span>
             </p>
 
             <div className="space-y-6">
@@ -78,10 +78,10 @@ export default function HumanAI() {
               
               <div className="w-full space-y-4 max-w-xs">
                 {[
-                  "Early warning triggers",
-                  "Pattern recognition",
+                  "Standardized EWS Scoring",
+                  "Vital Trend Validation",
                   "Deterioration forecasting",
-                  "Contextual health alerts"
+                  "Personalized Vital Thresholds"
                 ].map((tag, i) => (
                    <div key={i} className="flex items-center gap-3 bg-[#F8FAFC] p-3 rounded-2xl border border-[#E2E8F0]">
                       <CheckCircle2 className="w-4 h-4 text-[#10B981]" />

@@ -17,12 +17,12 @@ const data = [
 
 const readmissionsData = [
   { name: 'Standard Care', value: 18, color: '#94a3b8' },
-  { name: 'CuraStream', value: 7, color: '#2563eb' },
+  { name: 'GOQii', value: 7, color: '#2563eb' },
 ];
 
 export default function DashboardPreview() {
   return (
-    <section className="py-24 overflow-hidden bg-white" id="intelligence">
+    <section className="py-24 overflow-hidden bg-white" id="ews-engine">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1">
@@ -94,8 +94,8 @@ export default function DashboardPreview() {
 
                 <div className="p-4 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-[#2563EB] rounded-full" />
-                    <p className="text-[12px] font-bold text-[#0F172A]">AI Risk Assessment: Low Risk (98%)</p>
+                    <div className="w-2 h-2 bg-[#EF4444] rounded-full" />
+                    <p className="text-[12px] font-bold text-[#0F172A]">CLINICAL RISK ASSESSMENT (EWS): EWS Score: 3 (Critical)</p>
                   </div>
                   <button className="text-[11px] font-bold text-[#2563EB] uppercase tracking-wider">Details</button>
                 </div>
@@ -105,21 +105,21 @@ export default function DashboardPreview() {
 
           <div className="order-1 lg:order-2">
             <div className="inline-flex items-center px-4 py-2 bg-[#F1F5F9] rounded-full text-[#475569] text-[11px] font-bold uppercase tracking-wider mb-6">
-              Platform Intelligence
+              Clinician-Led, Analytics-Driven Oversight
             </div>
             <h2 className="text-4xl font-extrabold text-[#0F172A] mb-8 leading-tight tracking-tight">
               Intelligent Care, <br />
               <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">Measured Continuously.</span>
             </h2>
             <p className="text-lg text-[#64748B] mb-10 leading-[1.6]">
-              GOQii synthesizes complex biometric data into actionable clinical insights. We prioritize the patients who need your attention most.
+              GOQii synthesizes complex biometric data into actionable predictive insights. We prioritize the patients who need your attention most.
             </p>
 
             <div className="space-y-6">
               {[
                 { label: "Live patient dashboards", desc: "Real-time state tracking for every patient in your care." },
                 { label: "Risk alerts & notifications", desc: "Identify deterioration before an acute event occurs." },
-                { label: "Predictive health insights", desc: "Early threat detection using longitudinal health data." },
+                { label: "Predictive health insights", desc: "Early threat detection using longitudinal clinical vitals." },
                 { label: "Population health analytics", desc: "Monitor your entire cohort from a single pane." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">

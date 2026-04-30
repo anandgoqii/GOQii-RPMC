@@ -47,7 +47,7 @@ export default function TheRPMKit() {
             <span className="text-[#94A3B8] font-medium">Ready from Day One.</span>
           </h2>
           <p className="text-lg text-[#64748B] leading-[1.6]">
-            A complete, clinically validated monitoring kit — pre-configured, connected, and ready to deliver real-time health data without setup or friction.
+            A complete, clinically validated monitoring kit — pre-configured, connected, and ready to deliver real-time clinical vitals without setup or friction.
           </p>
         </div>
 
@@ -143,19 +143,19 @@ export default function TheRPMKit() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#E0E7FF] text-[#2563EB] font-bold text-xs flex items-center justify-center mt-0.5">1</div>
-                  <p className="text-sm text-[#475569] leading-relaxed">Devices automatically <span className="font-semibold text-[#0F172A]">sync patient data</span></p>
+                  <p className="text-sm text-[#475569] leading-relaxed">Devices <span className="font-semibold text-[#0F172A]">sync vitals seamlessly</span></p>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#E0E7FF] text-[#2563EB] font-bold text-xs flex items-center justify-center mt-0.5">2</div>
-                  <p className="text-sm text-[#475569] leading-relaxed">Data is <span className="font-semibold text-[#0F172A]">securely transmitted</span> to the platform</p>
+                  <p className="text-sm text-[#475569] leading-relaxed"><span className="font-semibold text-[#0F172A]">Encrypted transmission</span> ensures total Data Sovereignty and Residency Compliance.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#E0E7FF] text-[#2563EB] font-bold text-xs flex items-center justify-center mt-0.5">3</div>
-                  <p className="text-sm text-[#475569] leading-relaxed">AI <span className="font-semibold text-[#0F172A]">detects risk patterns</span> proactively</p>
+                  <p className="text-sm text-[#475569] leading-relaxed"><span className="font-semibold text-[#0F172A]">Engine maps vitals</span> against EWS (Early Warning Score) standards.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#E0E7FF] text-[#2563EB] font-bold text-xs flex items-center justify-center mt-0.5">4</div>
-                  <p className="text-sm text-[#475569] leading-relaxed">Care teams receive <span className="font-semibold text-[#0F172A]">real-time alerts</span></p>
+                  <p className="text-sm text-[#475569] leading-relaxed"><span className="font-semibold text-[#0F172A]">Clinical Command Center</span> triggers immediate, role-based intervention protocols.</p>
                 </li>
               </ul>
 

@@ -16,20 +16,20 @@ const steps = [
   },
   {
     icon: BrainCircuit,
-    title: "AI Risk Detection",
+    title: "Physiological Risk Assessment",
     desc: "Our neural network detects subtle deviations in vitals before they become critical.",
     color: "bg-purple-50 text-purple-600"
   },
   {
     icon: HeartPulse,
-    title: "Clinical Action",
+    title: "CLINICAL INTERVENTION",
     desc: "Care teams intervene proactively based on prioritized risk alerts.",
     color: "bg-rose-50 text-rose-600"
   },
   {
     icon: UserCheck,
     title: "Continuous Engagement",
-    desc: "Ongoing behavioral nudges and coaching support driving long-term adherence.",
+    desc: "Ongoing Care Pathways and coaching support driving long-term adherence.",
     color: "bg-amber-50 text-amber-600"
   }
 ];
@@ -41,7 +41,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h2 className="text-4xl font-extrabold text-[#0F172A] mb-5 tracking-tight">Proactive Care Loop</h2>
           <p className="text-lg text-[#64748B] leading-[1.6]">
-            CuraStream bridges the gap between clinic visits with an end-to-end monitoring ecosystem.
+            GOQii HealthEngage bridges the gap between clinic visits with an end-to-end monitoring ecosystem.
           </p>
         </div>
 

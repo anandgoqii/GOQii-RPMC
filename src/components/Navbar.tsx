@@ -35,7 +35,7 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          {['RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
+          {['RPMC Kit', 'EWS Engine', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
             <Link
               key={item}
               to={
@@ -76,7 +76,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-20 left-6 right-6 bg-white rounded-3xl p-8 shadow-2xl border border-slate-100 flex flex-col gap-6 md:hidden"
         >
-          {['RPMC Kit', 'Intelligence', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
+          {['RPMC Kit', 'EWS Engine', 'Solutions', 'Outcomes', 'About', 'Integration', 'Compliance'].map((item) => (
             <Link 
               key={item} 
               to={

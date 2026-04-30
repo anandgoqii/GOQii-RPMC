@@ -30,7 +30,7 @@ export default function Terms() {
               <section>
                 <h2 className="text-2xl font-bold text-[#0F172A] mb-4">1. About the Platform</h2>
                 <p>
-                  GOQii HealthEngage RPMC provides a remote patient monitoring ecosystem that includes connected devices, data analytics, AI-driven insights, telehealth capabilities, and care coordination tools.
+                  GOQii HealthEngage RPMC provides a remote patient monitoring ecosystem that includes connected devices, data analytics, Predictive Logic-driven insights, telehealth capabilities, and care coordination tools.
                 </p>
                 <p className="mt-4">
                   The Platform is intended for use by healthcare providers, organizations, and authorized users.

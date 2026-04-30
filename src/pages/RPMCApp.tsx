@@ -155,7 +155,7 @@ export default function RPMCApp() {
                     {[
                       { title: 'Smart Nudges', desc: 'Behavioral science backed alerts that encourage healthy actions.' },
                       { title: 'Personalized Reminders', desc: 'Timely prompts for readings, medication, and appointments.' },
-                      { title: 'Instant Feedback', desc: 'Real-time classification of health data for immediate awareness.' }
+                      { title: 'Instant Feedback', desc: 'Real-time classification of clinical vitals for immediate awareness.' }
                     ].map((item, i) => (
                       <div key={i} className="flex gap-6 p-6 rounded-3xl bg-slate-50 items-center">
                         <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-sm">
@@ -179,9 +179,9 @@ export default function RPMCApp() {
                      {[
                        { label: 'Devices', icon: Zap },
                        { label: 'App', icon: Smartphone },
-                       { label: 'AI Intelligence', icon: Cloud },
+                       { label: 'PREDICTIVE ANALYTIC ENGINE', icon: Cloud },
                        { label: 'Care Team', icon: Users },
-                       { label: 'Action', icon: Activity }
+                       { label: 'CLINICAL INTERVENTION', icon: Activity }
                      ].map((item, i, arr) => (
                        <div key={i} className="flex items-center gap-6">
                          <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center border border-white/10">

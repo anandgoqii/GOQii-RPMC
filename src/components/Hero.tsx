@@ -31,14 +31,14 @@ export default function Hero() {
           </div>
           
           <h1 className="text-[56px] leading-[1.1] font-extrabold text-[#0F172A] tracking-[-1.5px] mb-6">
-            Connected Care, <br />
+            Connected Care. <br />
             <span className="bg-gradient-to-r from-[#0D9488] to-[#2563EB] bg-clip-text text-transparent">
-              Delivered Continuously
+              Predictive Intervention
             </span>
           </h1>
           
           <p className="text-lg text-[#64748B] leading-[1.6] max-w-[480px] mb-8">
-            Real-time patient monitoring through connected medical devices, enabling care teams to stay informed and take timely action for better outcomes.
+            Real-time patient monitoring through connected medical devices, enabling care teams to stay informed and perform CLINICAL INTERVENTION for better outcomes.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -107,11 +107,11 @@ export default function Hero() {
 
             <div className="col-span-2 bg-white rounded-2xl p-4 shadow-sm border border-[#E2E8F0]">
               <div className="flex justify-between items-center mb-3">
-                <div className="text-[11px] font-semibold text-[#94A3B8] uppercase tracking-wider">AI Risk Prediction</div>
-                <div className="text-[11px] font-semibold text-[#2563EB]">Low Risk (98%)</div>
+                <div className="text-[11px] font-semibold text-[#94A3B8] uppercase tracking-wider">CLINICAL RISK ASSESSMENT (EWS)</div>
+                <div className="text-[11px] font-semibold text-[#EF4444]">EWS Score: 3 (Critical)</div>
               </div>
               <div className="h-2 w-full bg-[#F1F5F9] rounded-full overflow-hidden">
-                <div className="h-full w-[98%] bg-[#2563EB] rounded-full" />
+                <div className="h-full w-full bg-[#EF4444] rounded-full" />
               </div>
             </div>
           </div>

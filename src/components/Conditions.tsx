@@ -59,7 +59,7 @@ export default function Conditions() {
               </p>
               <div className="flex gap-2">
                  <span className="px-3 py-1 rounded-full bg-[#F1F5F9] text-[#475569] text-[10px] font-semibold">Real-time</span>
-                 <span className="px-3 py-1 rounded-full bg-[#F1F5F9] text-[#475569] text-[10px] font-semibold">AI Powered</span>
+                 <span className="px-3 py-1 rounded-full bg-[#F1F5F9] text-[#475569] text-[10px] font-semibold">Predictive Logic Powered</span>
               </div>
             </motion.div>
           ))}
